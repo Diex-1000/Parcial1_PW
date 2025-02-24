@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="English">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departamentos Via 38</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-200">
+   
+
+<nav class="bg-white border-gray-200 dark:bg-gray-900">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="Assets/house-512.png" class="h-8" alt="Flowbite Logo" />
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Departamentos Via 38</span>
+  </a>
+  <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+      <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+        <img src="Assets/LogoUS.webp" class="w-5 h-5 rounded-full me-3" alt="US Flag">
+        English (US)
+      </button>
+      
+      <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700" id="language-dropdown-menu">
+        <ul class="py-2 font-medium" role="none">
+          <li>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+              <div class="inline-flex items-center">
+                <img src="Assets/LogoUS.webp" class="w-5 h-5 rounded-full me-3" alt="US Flag">
+                English (US)
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+              <div class="inline-flex items-center">
+                <img src="Assets/LogoMexico.webp" class="w-5 h-5 rounded-full me-3" alt="Mexico Flag">
+                Español
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button data-collapse-toggle="navbar-language" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-language" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+  </div>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
+    <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <li>
+        <a href="index.html" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+      </li>
+     
+      <li>
+        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Apartments<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+</svg></button>
+      
+        <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
+              <li>
+                <a href="A22.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Three-Bedroom Apartment</a>
+              </li>
+              <li>
+                <a href="A17.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Two-Bedroom Apartment</a>
+              </li>
+              <li>
+                <a href="B11.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">One-Bedroom Apartment</a>
+              </li>
+            </ul>
+        </div>
+    </li>
+      <li>
+        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Hotel Info</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+
+
+
+
+<div id="carousel" class="relative w-full overflow-hidden mt-4">
+  <div class="flex transition-transform duration-500 ease-in-out" id="carousel-track">
+  
+    <img src="Assets/terrazavia.jpg" class="lg:w-1/2 px-1" alt="...">
+
+  
+    <img src="Assets/via38.jpg" class="lg:w-1/2 px-1" alt="...">
+    <img src="Assets/via37.jpg" class="lg:w-1/2 px-1" alt="...">
+    <img src="Assets/via35.jpg" class="lg:w-1/2 px-1" alt="...">
+    <img src="Assets/via34.jpg" class="lg:w-1/2 px-1" alt="...">
+    <img src="Assets/gym38.jpg" class="lg:w-1/2 px-1" alt="...">
+    <img src="Assets/gym37.jpg" class="lg:w-1/2 px-1" alt="...">
+    <img src="Assets/habitacion38.jpg" class="lg:w-1/2 px-1" alt="...">
+    <img src="Assets/habitacion37.jpg" class="lg:w-1/2 px-1" alt="...">
+    <img src="Assets/terrazavia.jpg" class="lg:w-1/2 px-1" alt="...">
+
+
+    <img src="Assets/via38.jpg" class="lg:w-1/2 px-1" alt="...">
+  </div>
+
+  <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-500 text-white p-2">←</button>
+  <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-500 text-white p-2">→</button>
+</div>
+
+
+
+
+
+
+
+<div class="flex lg:flex-row flex-col bg-slate-300 lg:h-24 lg:w-full my-4 justify-evenly items-center ">
+  <div class="text-center lg:mb-0 mt-4 mb-4 lg:mt-0">
+    <p class="font-bold">Dining</p>
+    <p>On-site restaurant</p>
+    <p>Room service</p>
+  </div>
+  <div class="w-px bg-gray-400 h-20 lg:block hidden"></div>
+<div class="w-40 bg-gray-400 h-px mb-2 sm:block lg:hidden"></div>
+  
+  <div class="text-center lg:mb-0 mb-4">
+    <p class="font-bold text-center ">Fitness and recreation</p>
+    <p>Outdoor pool</p>
+    <p>Fitness center</p>
+  </div>
+<div class="w-px bg-gray-400 h-20 lg:block hidden"></div>
+<div class="w-40 bg-gray-400 h-px mb-2 sm:block lg:hidden"></div>
+  <div class="text-center lg:mb-0 mb-4">
+    <p class="font-bold mt-1">Arrival time</p>
+    <p>Check-in: 3 pm </p>
+    <p >Check-out: 12 pm</p>
+  </div>
+</div>
+
+
+<div class="grid lg:grid-cols-2 md:grid-cols mt-6 mb-8 gap-8">
+  
+  <div>
+    <h1 class="m-6 ml-20 text-2xl font-bold tracking-tight text-gray-900">
+      A luxurious stay by Playa Del Carmen
+    </h1>
+    <p class="m-6 ml-20 font-normal text-gray-900">
+      Our hotel is two blocks from white sand beaches and just close enough to the excitement of Playa Del Carmen's
+      famous Fifth Avenue. Spend a relaxed afternoon in our rooftop infinity pool, featuring a panoramic ocean view,
+      cabanas, and sun loungers. The ferry to Cozumel is half a kilometer away.
+    </p>
+  </div>
+
+  
+  <div class="lg:border-l sm:border-t lg:border-t-slate-200 border-slate-400 ml-10 lg:ml-0 pl-8">
+    <h1 class="mb-4 text-2xl font-bold tracking-tight text-gray-900 mt-6">
+      Our amenities
+    </h1>
+    <div class="grid grid-cols-3 gap-4">
+      <p>Connecting Rooms</p>
+      <p>Free WiFi</p>
+      <p>Non-smoking rooms</p>
+      <p>Digital Key</p>
+      <p>Concierge</p>
+      <p>Room Service</p> 
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="bg-slate-300 h4 w-full">
+  <h4 class="text-2xl font-bold dark:text-black pt-6 text-center"> Our Apartments </h4>
+</div>
+
+
+
+
+<div class=" flex flex-col md:flex-row bg-slate-300 pb-10 justify-evenly sm:flex items-center">
+  
+  <div class="card max-w-sm rounded-lg bg-gray-800 shadow-xl overflow-hidden m-6">
+    <img class="rounded-lg" src="Assets/A22.jpg" alt="A22card" />
+    <div class="p-5">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-white">Three-Bedroom Apartment</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Spacious with a living room, kitchen, and three guest rooms.</p>
+        <a href="A22.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-neutral-950 hover:bg-neutral-900">
+            See more
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+  </div>
+
+  <div class="card max-w-sm rounded-lg bg-gray-800 shadow-xl overflow-hidden m-6">
+    <img class="rounded-lg" src="Assets/A17.jpg" alt="A17card" />
+    <div class="p-5">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-white">Two-Bedroom Apartment</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Cozy and modern, with a living room, kitchen, and two guest rooms.</p>
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-neutral-950 hover:bg-neutral-900">
+            See more
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+  </div>
+
+<div class="card max-w-sm rounded-lg bg-gray-800 shadow-xl overflow-hidden m-6">
+  <img class="rounded-lg" src="Assets/B11.jpg" alt="B11card" />
+  <div class="p-5">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-white">One-Bedroom Apartment</h5>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Comfortable with a living room, kitchen, and one guest room.</p>
+      <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-neutral-950 hover:bg-neutral-900">
+          See more
+           <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+      </a>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<footer class="w-full bg-white shadow-sm dark:bg-gray-800">
+  <div class="w-full max-w-screen-xl mx-auto p-5 flex justify-center gap-x-16">
+    <button class="text-sm text-gray-500 dark:text-gray-400 cursor-pointer hover:text-gray-700 dark:hover:text-gray-300 transition flex items-center"
+      onclick="copyToClipboard('9838358850')">
+      <img src="Assets/phone-.png" class="w-5 h-auto rounded-full me-3" alt="Phone">
+      Phone
+    </button>
+    <button class="text-sm text-gray-500 dark:text-gray-400 cursor-pointer hover:text-gray-700 dark:hover:text-gray-300 transition flex items-center"
+      onclick="copyToClipboard('diex.goca@gmail.com')">
+      <img src="Assets/email.png" class="w-5 h-auto rounded-full me-3" alt="Email">
+      Email
+    </button>
+    <a href="#" class="text-sm text-gray-500 dark:text-gray-400 cursor-pointer hover:text-gray-700 dark:hover:text-gray-300 transition flex items-center">
+      <img src="Assets/location.png" class="w-4 h-auto rounded-full me-3 items-center" alt="Location">
+      Location
+    </a>
+  </div>
+</footer>
+
+
+
+<script>
+  const track = document.getElementById("carousel-track");
+  const images = document.querySelectorAll("#carousel-track img");
+  let index = 1; 
+  const movePercentage = 50; 
+  const totalImages = images.length;
+
+  function updateCarousel() {
+    track.style.transition = "transform 0.5s ease-in-out";
+    track.style.transform = `translateX(-${index * movePercentage}%)`;
+  }
+
+  document.getElementById("next").addEventListener("click", () => {
+    if (index >= totalImages - 2) {
+      index++;
+      updateCarousel();
+      setTimeout(() => {
+        track.style.transition = "none";
+        index = 1; 
+        track.style.transform = `translateX(-${index * movePercentage}%)`;
+      }, 500);
+    } else {
+      index++;
+      updateCarousel();
+    }
+  });
+
+  document.getElementById("prev").addEventListener("click", () => {
+    if (index <= 0) {
+      index--;
+      updateCarousel();
+      setTimeout(() => {
+        track.style.transition = "none";
+        index = totalImages - 3; 
+        track.style.transform = `translateX(-${index * movePercentage}%)`;
+      }, 500);
+    } else {
+      index--;
+      updateCarousel();
+    }
+  });
+
+  updateCarousel();
+</script>
+
+<script>
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        alert("Copied: " + text);
+    }).catch(err => {
+        console.error("Failed to copy: ", err);
+    });
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'es,fr,de,it,pt', 
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript"
+  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

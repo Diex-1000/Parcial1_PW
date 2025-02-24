@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A22</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-slate-200">
+<nav class="bg-white border-gray-200 dark:bg-gray-900">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="Assets/house-512.png" class="h-8" alt="Flowbite Logo" />
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Departamentos Via 38</span>
+  </a>
+  <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+      <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+        <img src="Assets/LogoUS.webp" class="w-5 h-5 rounded-full me-3" alt="US Flag">
+        English (US)
+      </button>
+      <!-- Dropdown -->
+      <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700" id="language-dropdown-menu">
+        <ul class="py-2 font-medium" role="none">
+          <li>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+              <div class="inline-flex items-center">
+                <img src="Assets/LogoUS.webp" class="w-5 h-5 rounded-full me-3" alt="US Flag">
+                English (US)
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+              <div class="inline-flex items-center">
+                <img src="Assets/LogoMexico.webp" class="w-5 h-5 rounded-full me-3" alt="Mexico Flag">
+                Español
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button data-collapse-toggle="navbar-language" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-language" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+  </div>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
+    <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <li>
+        <a href="index.html" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+      </li>
+     
+      <li>
+        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Apartments<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+</svg></button>
+        <!-- Dropdown menu -->
+        <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
+              <li>
+                <a href="A22.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Three-Bedroom Apartment</a>
+              </li>
+              <li>
+                <a href="A17.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Two-Bedroom Apartment</a>
+              </li>
+              <li>
+                <a href="B11.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">One-Bedroom Apartment</a>
+              </li>
+            </ul>
+        </div>
+    </li>
+      <li>
+        <a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Hotel Info</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+    
+
+
+<div class="grid grid-cols-2 lg:gap-4">
+    <div>
+        <img src="Assets/A22.jpg" class=" rounded-l-lg" alt="">
+    </div>
+    <div class="grid grid-cols-2 lg:gap-4 ">
+        <img src="Assets/A22.jpg" alt="">
+        <img src="Assets/A22.jpg" class=" rounded-tr-lg" alt="">
+        <img src="Assets/A22.jpg" alt="">
+        <img src="Assets/A22.jpg" class=" rounded-br-lg" alt="">
+    </div>
+</div>
+
+<div class="grid grid-cols-2">
+    <div>
+
+    </div>
+
+    <div>
+        
+    </div>
+
+</div>
+
+<h4 class="text-2xl font-bold dark:text-black mt-2 ml-6" >A22</h4>
+<p class="mb-3 font-normal text-black ml-6">3 Bedrooms , 2 Bathrooms, 2 Balconies, 2 Parking Spaces</p>
+
+
+<h4 class="text-2xl font-bold dark:text-black mt-6 ml-6" >This place offers</h4>
+<p class="mb-3 font-normal text-black ml-6">3 Bedrooms , 2 Bathrooms, 2 Balconies, 2 Parking Spaces</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="w-full bg-white shadow-sm dark:bg-gray-800">
+  <div class="w-full max-w-screen-xl mx-auto p-5 flex justify-center gap-x-16">
+    <button class="text-sm text-gray-500 dark:text-gray-400 cursor-pointer hover:text-gray-700 dark:hover:text-gray-300 transition flex items-center"
+      onclick="copyToClipboard('9838358850')">
+      <img src="Assets/phone-.png" class="w-5 h-auto rounded-full me-3" alt="Phone">
+      Phone
+    </button>
+    <button class="text-sm text-gray-500 dark:text-gray-400 cursor-pointer hover:text-gray-700 dark:hover:text-gray-300 transition flex items-center"
+      onclick="copyToClipboard('diex.goca@gmail.com')">
+      <img src="Assets/email.png" class="w-5 h-auto rounded-full me-3" alt="Email">
+      Email
+    </button>
+    <a href="#" class="text-sm text-gray-500 dark:text-gray-400 cursor-pointer hover:text-gray-700 dark:hover:text-gray-300 transition flex items-center">
+      <img src="Assets/location.png" class="w-4 h-auto rounded-full me-3 items-center" alt="Location">
+      Location
+    </a>
+  </div>
+</footer>
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+</html>
