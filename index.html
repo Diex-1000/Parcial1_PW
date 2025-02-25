@@ -231,9 +231,6 @@
 
 
 
-
-
-
 <footer class="w-full bg-white shadow-sm dark:bg-gray-800">
   <div class="w-full max-w-screen-xl mx-auto p-5 flex justify-center gap-x-16">
     <button class="text-sm text-gray-500 dark:text-gray-400 cursor-pointer hover:text-gray-700 dark:hover:text-gray-300 transition flex items-center"
@@ -258,9 +255,17 @@
 <script>
   const track = document.getElementById("carousel-track");
   const images = document.querySelectorAll("#carousel-track img");
-  let index = 1; 
-  const movePercentage = 50; 
+  let index = 1;
+  let movePercentage = getMovePercentage();
   const totalImages = images.length;
+
+  function getMovePercentage() {
+    if (window.innerWidth >= 1024) {
+      return 50;
+    } else {
+      return 100;
+    }
+  }
 
   function updateCarousel() {
     track.style.transition = "transform 0.5s ease-in-out";
@@ -273,7 +278,7 @@
       updateCarousel();
       setTimeout(() => {
         track.style.transition = "none";
-        index = 1; 
+        index = 1;
         track.style.transform = `translateX(-${index * movePercentage}%)`;
       }, 500);
     } else {
@@ -288,7 +293,7 @@
       updateCarousel();
       setTimeout(() => {
         track.style.transition = "none";
-        index = totalImages - 3; 
+        index = totalImages - 3;
         track.style.transform = `translateX(-${index * movePercentage}%)`;
       }, 500);
     } else {
@@ -297,8 +302,14 @@
     }
   });
 
+  window.addEventListener("resize", () => {
+    movePercentage = getMovePercentage();
+    updateCarousel();
+  });
+
   updateCarousel();
 </script>
+
 
 <script>
 function copyToClipboard(text) {

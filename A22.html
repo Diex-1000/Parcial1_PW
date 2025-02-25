@@ -82,40 +82,62 @@
     
 
 
-<div class="grid grid-cols-2 lg:gap-4">
+<div class="grid grid-cols-2">
     <div>
         <img src="Assets/A22.jpg" class=" rounded-l-lg" alt="">
     </div>
-    <div class="grid grid-cols-2 lg:gap-4 ">
-        <img src="Assets/A22.jpg" alt="">
-        <img src="Assets/A22.jpg" class=" rounded-tr-lg" alt="">
-        <img src="Assets/A22.jpg" alt="">
-        <img src="Assets/A22.jpg" class=" rounded-br-lg" alt="">
+    <div class="grid grid-cols-2 items-between">
+        <img src="Assets/habitacion38.jpg" alt="" class="h-full">
+        <img src="Assets/habitacion37.jpg" class="h-full rounded-tr-lg" alt="">
+        <img src="Assets/habitacion36.jpg" alt="" class="h-full">
+        <img src="Assets/habitacion35.jpg" class="h-full rounded-br-lg" alt="">
     </div>
 </div>
 
-<div class="grid grid-cols-2">
-    <div>
 
-    </div>
 
-    <div>
-        
-    </div>
+
+<div class=" bg-slate-300 lg:h-10 lg:w-full">
 
 </div>
 
-<h4 class="text-2xl font-bold dark:text-black mt-2 ml-6" >A22</h4>
-<p class="mb-3 font-normal text-black ml-6">3 Bedrooms , 2 Bathrooms, 2 Balconies, 2 Parking Spaces</p>
-
-
-<h4 class="text-2xl font-bold dark:text-black mt-6 ml-6" >This place offers</h4>
-<p class="mb-3 font-normal text-black ml-6">3 Bedrooms , 2 Bathrooms, 2 Balconies, 2 Parking Spaces</p>
 
 
 
 
 
+<div class="grid lg:grid-cols-2 md:grid-cols mt-6 mb-8 gap-8">
+
+  <div>
+    <h1 class="m-6 ml-20 text-2xl font-bold tracking-tight text-gray-900">
+      1 King Bed Deluxe Courtyard View
+    </h1>
+    <p class="m-6 ml-20 font-normal text-gray-900">
+      Lose yourself in the comfort of our Deluxe Suites. This spacious 388 sq ft. room is equipped with a King size bed, a
+      sofa, and a practical coffee table. In it, you can let yourself be carried away in a whirlpool of elegance and comfort,
+      where every corner is an invitation to intimacy and complicity. It has a a microwave, and a small refrigerator. In this
+      complete picture of luxury and pleasure, even the television becomes a canvas for your dreams.
+    </p>
+  </div>
+
+
+  <div class="lg:border-l sm:border-t lg:border-t-slate-200 border-slate-400 ml-10 lg:ml-0 pl-8">
+    <h1 class="mb-4 text-2xl font-bold tracking-tight text-gray-900 mt-6">
+      Room highlights
+    </h1>
+    <div class="grid grid-cols-3 gap-4">
+      <p>Sleeps 2</p>
+      <p>Separate toilet area</p>
+      <p>Coffee maker</p>
+      <p>LCD TV</p>
+      <p>Hairdryer</p>
+      <p>Mini refrigerator</p>
+      <p>Roll-in shower</p>
+      <p>50-inch HDTV</p>
+      <p>Iron</p>
+    </div>
+  </div>
+</div>
 
 
 
@@ -150,6 +172,15 @@
   </div>
 </footer>
 
+
+<script>
+  function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Copied: " + text);
+    }).catch(err => {
+      console.error("Failed to copy: ", err);
+    });
+  }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
